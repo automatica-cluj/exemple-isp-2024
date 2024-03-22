@@ -46,7 +46,7 @@ public class Robot5 {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Robot5 robot5 = (Robot5) o;
+        Robot5 robot5 = (Robot5) o; //conversie de tip
         return name == robot5.name;
     }
 
@@ -59,6 +59,12 @@ public class Robot5 {
         Robot5 robot1 = new Robot5(1234, 0);
         Robot5 robot2 = new Robot5(5678, 0);
         Robot5 robot3 = new Robot5(1234, 0);
+
+        if(robot1==robot3){
+            System.out.println("Robotii sunt identici.");
+        }else{
+            System.out.println("Robotii sunt diferiti.");
+        }
 
         System.out.println("robot1 == robot2: " + robot1.equals(robot2));
         System.out.println("robot1 == robot3: " + robot1.equals(robot3));

@@ -16,5 +16,27 @@ public class Test {
         robot.position = 0;
         System.out.println("Robot name: " + robot.name);
         System.out.println("Robot position: " + robot.position);
-    }
+
+        Robot1 r2 = new Robot1();
+        Robot1 r3 = new Robot1();
+        Robot1 r4 = new Robot1();
+
+        r2.position = 10;
+        r4.position = 50;
+       System.out.println(".......................");
+       System.out.println(r2);
+       System.out.println(r3);
+       System.out.println(r4);
+       System.out.println(".......................");
+       r2 = r3;
+       System.out.println(r2);
+       System.out.println(r3);
+       System.out.println(r2.position);
+
+       String s1 = "aaaaa";
+       String s2 = new String("bbbbb");
+
+       Robot1 r5 = null;
+
+   }
 }

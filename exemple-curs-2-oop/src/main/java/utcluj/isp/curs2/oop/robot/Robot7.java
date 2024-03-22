@@ -74,7 +74,16 @@ public class Robot7 {
 
     @Override
     public String toString() {
-        return "Robot7{" + "name=" + name + ", position=" + position + ", state=" + state + '}';
+        return "Robot7{" +
+                "name='" + name + '\'' +
+                ", position=" + position +
+                ", state=" + state +
+                '}';
     }
 
+    public static void main(String[] args) {
+        Robot7 r = new Robot7("AAAXXX",100,true);
+        System.out.println(r);
+
+    }
 }

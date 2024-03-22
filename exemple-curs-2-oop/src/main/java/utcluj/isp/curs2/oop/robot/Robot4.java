@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * COncept of encapsulations getters & setters.
+ * Concept of encapsulations getters & setters.
  */
 
 public class Robot4 {

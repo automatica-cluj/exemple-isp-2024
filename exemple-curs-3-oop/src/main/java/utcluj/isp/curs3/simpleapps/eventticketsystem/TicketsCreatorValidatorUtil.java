@@ -13,7 +13,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
-public class TicketsManager {
+public class TicketsCreatorValidatorUtil {
 
     public PurchasedTicket createTicket(String name, String email, String phoneNumber, String eventName, LocalDateTime eventDate, String ticketType, double ticketPrice, String purchaseDate) {
         EventTicket eventTicket = new EventTicket(eventName, eventDate, ticketType, ticketPrice);
@@ -39,21 +39,21 @@ public class TicketsManager {
 
     }
 
-    public boolean checkinTicket(String imagePath, String phoneNumber) throws IOException, NotFoundException {
+    public String checkinTicket(String imagePath, String phoneNumber) throws IOException, NotFoundException {
         File file = new File(imagePath);
         BufferedImage image = ImageIO.read(file);
         LuminanceSource source = new RGBLuminanceSource(image.getWidth(), image.getHeight(), getImageData(image));
         BinaryBitmap bitmap = new BinaryBitmap(new HybridBinarizer(source));
         Result result = new MultiFormatReader().decode(bitmap);
-        String qrText =  result.getText();
-        System.out.println("Validating QR ticket: " + qrText);
-        if(qrText.contains("Phone Number: "+phoneNumber+" |")){
-            System.out.println("Ticket is valid!Checkin complete.");
-            return true;
-        }else{
-            System.out.println("Ticket is not valid!Checkin failed.");
-            return false;
-        }
+        return result.getText();
+//        System.out.println("Validating QR ticket: " + qrText);
+//        if(qrText.contains("Phone Number: "+phoneNumber+" |")){
+//            System.out.println("Ticket is valid!Checkin complete.");
+//            return true;
+//        }else{
+//            System.out.println("Ticket is not valid!Checkin failed.");
+//            return false;
+//        }
     }
 
     private int[] getImageData(BufferedImage image) {

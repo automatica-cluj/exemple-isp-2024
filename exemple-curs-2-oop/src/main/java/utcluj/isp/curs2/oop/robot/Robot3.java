@@ -1,7 +1,7 @@
 package utcluj.isp.curs2.oop.robot;
 
 /**
- * Demonstrates of methods overloading.
+ * Demonstrates of methods overloading (ro. supraincarcare metodelor).
  */
 public class Robot3 {
 
