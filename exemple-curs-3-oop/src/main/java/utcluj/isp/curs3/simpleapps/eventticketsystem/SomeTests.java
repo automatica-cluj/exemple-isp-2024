@@ -1,11 +1,13 @@
 package utcluj.isp.curs3.simpleapps.eventticketsystem;
 
 import com.google.zxing.NotFoundException;
+import utcluj.isp.curs3.simpleapps.eventticketsystem.entities.PurchasedTicket;
+import utcluj.isp.curs3.simpleapps.eventticketsystem.services.TicketsCreatorValidatorUtil;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
 
-public class Main {
+public class SomeTests {
     public static void main(String[] args) {
         //Create ticket
 

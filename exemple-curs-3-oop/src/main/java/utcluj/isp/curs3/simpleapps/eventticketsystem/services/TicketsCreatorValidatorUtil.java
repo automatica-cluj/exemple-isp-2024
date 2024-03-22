@@ -1,4 +1,4 @@
-package utcluj.isp.curs3.simpleapps.eventticketsystem;
+package utcluj.isp.curs3.simpleapps.eventticketsystem.services;
 
 import java.awt.image.BufferedImage;
 
@@ -7,6 +7,8 @@ import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.common.HybridBinarizer;
 import com.google.zxing.qrcode.QRCodeWriter;
+import utcluj.isp.curs3.simpleapps.eventticketsystem.entities.EventTicket;
+import utcluj.isp.curs3.simpleapps.eventticketsystem.entities.PurchasedTicket;
 
 import javax.imageio.ImageIO;
 import java.io.File;

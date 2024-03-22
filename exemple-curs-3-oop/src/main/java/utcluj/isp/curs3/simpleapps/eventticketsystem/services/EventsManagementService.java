@@ -1,4 +1,7 @@
-package utcluj.isp.curs3.simpleapps.eventticketsystem;
+package utcluj.isp.curs3.simpleapps.eventticketsystem.services;
+
+import utcluj.isp.curs3.simpleapps.eventticketsystem.entities.EventTicket;
+import utcluj.isp.curs3.simpleapps.eventticketsystem.entities.PurchasedTicket;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

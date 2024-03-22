@@ -14,13 +14,13 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-public class TicketsViewer extends JFrame {
+public class AppTicketsViewer extends JFrame {
     private JPanel mainPanel;
     private JList<String> fileList;
     private DefaultListModel<String> listModel;
     private JLabel imageLabel;
 
-    public TicketsViewer(String folderPath) {
+    public AppTicketsViewer(String folderPath) {
         super("File List Image Display");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -66,6 +66,6 @@ public class TicketsViewer extends JFrame {
 
     public static void main(String[] args) {
         String folderPath = "C:\\Tickets\\";
-        new TicketsViewer(folderPath);
+        new AppTicketsViewer(folderPath);
     }
 }

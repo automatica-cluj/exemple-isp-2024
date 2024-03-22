@@ -1,8 +1,10 @@
 package utcluj.isp.curs3.simpleapps.eventticketsystem;
 
+import utcluj.isp.curs3.simpleapps.eventticketsystem.services.EventsManagementService;
+
 import java.time.LocalDateTime;
 
-public class DemoEventsManager {
+public class AppEventsManager {
     public static void main(String[] args) {
         EventsManagementService eventsManagementService = new EventsManagementService();
         eventsManagementService.addEventTicket("Concert A", LocalDateTime.parse("2021-10-10T19:00:00"), "VIP", 100.0);
