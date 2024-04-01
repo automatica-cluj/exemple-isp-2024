@@ -1,10 +1,9 @@
-package utcluj.isp.curs3.liste.maps;
+package utcluj.isp.curs3.liste.maps2;
 
 import utcluj.isp.curs3.liste.arraylists.AirplaneTicket;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class TicketManagerHashMap {
 

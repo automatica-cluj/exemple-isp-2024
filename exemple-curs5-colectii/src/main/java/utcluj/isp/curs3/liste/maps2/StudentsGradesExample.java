@@ -1,4 +1,4 @@
-package utcluj.isp.curs3.liste.maps;
+package utcluj.isp.curs3.liste.maps2;
 
 import java.util.HashMap;
 import java.util.Map;
