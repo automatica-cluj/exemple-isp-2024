@@ -33,6 +33,8 @@ public class Account  {
         this.balance = balance;
     }
 
+    // equals method to compare two Account objects
+
 
     @Override
     public boolean equals(Object o) {

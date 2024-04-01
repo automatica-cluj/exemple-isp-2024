@@ -30,9 +30,9 @@ public class TicketManager {
     // Method to get all AirplaneTicket objects for a given flight number
     public ArrayList<AirplaneTicket> getAllTicketsForFlightNumber(String flightNumber) {
         ArrayList<AirplaneTicket> result = new ArrayList<AirplaneTicket>();
-        for (AirplaneTicket ticket : tickets) {
-            if (ticket.getFlightNumber().equals(flightNumber)) {
-                result.add(ticket);
+        for (int i = 0; i<tickets.size(); i++) {
+            if (tickets.get(i).getFlightNumber().equals(flightNumber)) {
+                result.add(tickets.get(i));
             }
         }
         return result;

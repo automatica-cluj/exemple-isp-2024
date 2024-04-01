@@ -19,8 +19,11 @@ public class StudentsGradesExample {
             sum += grade;
         }
         double averageGrade = sum / studentGrades.size();
-
         // Print average grade
         System.out.println("Average grade: " + averageGrade);
+
+        if(studentGrades.containsKey("Science")){
+            System.out.println("Science grade: " + studentGrades.get("Science"));
+        }
     }
 }

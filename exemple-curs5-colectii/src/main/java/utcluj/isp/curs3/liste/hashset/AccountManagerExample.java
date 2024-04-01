@@ -11,13 +11,15 @@ public class AccountManagerExample {
         Account account2 = new Account("Jane Doe", "234567", 2000.0);
         Account account3 = new Account("Bob Johnson", "345678", 500.0);
         Account account4 = new Account("Samantha Lee", "456789", 2500.0);
-
+        Account account5 = new Account("XSamantha Lee", "456789", 12500.0);
+        Account account6 = new Account("YSamantha Lee", "456789", 22500.0);
         // Add the Account objects to the AccountManager
-        boolean added1 = accountManager.addAccount(account1);
-        boolean added2 = accountManager.addAccount(account2);
-        boolean added3 = accountManager.addAccount(account3);
-        boolean added4 = accountManager.addAccount(account4);
-
+        accountManager.addAccount(account1);
+        accountManager.addAccount(account2);
+        accountManager.addAccount(account3);
+        accountManager.addAccount(account4);
+        accountManager.addAccount(account5);
+        accountManager.addAccount(account6);
         // Display all Account objects in the AccountManager
         accountManager.displayAllAccounts();
 
