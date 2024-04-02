@@ -9,6 +9,7 @@ public class TicketManager {
 
     // Constructor
     public TicketManager() {
+
         tickets = new ArrayList<AirplaneTicket>();
     }
 

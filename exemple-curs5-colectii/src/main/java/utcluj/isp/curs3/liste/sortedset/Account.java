@@ -41,14 +41,14 @@ public class Account implements Comparable<Account> {
 
     @Override
     public int compareTo(Account otherAccount) {
-        //return Double.compare(this.balance, otherAccount.getBalance());
-//        if(this.balance < otherAccount.getBalance()) {
-//            return 1;
-//        } else if(this.balance > otherAccount.getBalance()) {
-//            return -1;
-//        } else {
-//            return 0;
-//        }
-        return this.accountHolderName.compareTo(otherAccount.getAccountHolderName());
+      //  return Double.compare(this.balance, otherAccount.getBalance());
+        if(this.balance < otherAccount.getBalance()) {
+            return 1;
+        } else if(this.balance > otherAccount.getBalance()) {
+            return -1;
+        } else {
+            return 0;
+        }
+ //       return this.accountHolderName.compareTo(otherAccount.getAccountHolderName());
     }
 }

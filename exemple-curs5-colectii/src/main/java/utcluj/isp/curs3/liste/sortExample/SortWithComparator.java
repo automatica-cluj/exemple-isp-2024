@@ -1,12 +1,13 @@
 package utcluj.isp.curs3.liste.sortExample;
+import java.util.*;
 
 public class SortWithComparator {
     public static void main(String[] args) {
-        Vehicle[] vehicles = new Vehicle[4];
-        vehicles[0] = new Vehicle("Ford", "Focus", 2010, 10000);
-        vehicles[1] = new Vehicle("Audi", "A4", 2015, 20000);
-        vehicles[2] = new Vehicle("BMW", "X5", 2018, 30000);
-        vehicles[3] = new Vehicle("Mercedes", "E200", 2019, 40000);
+        ArrayList<Vehicle> vehicles = new ArrayList<>();
+        vehicles.add(new Vehicle("Audi", "A4", 2019, 25000));
+        vehicles.add(new Vehicle("BMW", "X5", 2020, 35000));
+        vehicles.add(new Vehicle("Mercedes", "E200", 2018, 20000));
+        vehicles.add(new Vehicle("Volkswagen", "Golf", 2017, 15000));
 
         System.out.println("Before sorting:");
         for (Vehicle vehicle : vehicles) {
