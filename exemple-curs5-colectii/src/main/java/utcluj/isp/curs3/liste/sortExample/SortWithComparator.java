@@ -17,7 +17,7 @@ public class SortWithComparator {
         /**
          * Comparing using a comparator.
          */
-        java.util.Arrays.sort(vehicles, new VehicleComparator());
+        java.util.Collections.sort(vehicles, new VehicleComparator());
         System.out.println("After sorting:");
         for (Vehicle vehicle : vehicles) {
             System.out.println(vehicle);
@@ -26,7 +26,7 @@ public class SortWithComparator {
         /**
          * Comparing using the Comparable interface.
          */
-        java.util.Arrays.sort(vehicles);
+        java.util.Collections.sort(vehicles);
         System.out.println("After sorting by make:");
         for (Vehicle vehicle : vehicles) {
             System.out.println(vehicle);
