@@ -5,13 +5,7 @@ import java.util.ArrayList;
 public class TicketManager {
 
     // ArrayList to store AirplaneTicket objects
-    private ArrayList<AirplaneTicket> tickets;
-
-    // Constructor
-    public TicketManager() {
-
-        tickets = new ArrayList<AirplaneTicket>();
-    }
+    private ArrayList<AirplaneTicket> tickets = new ArrayList<>();
 
     // Method to add a new AirplaneTicket object to the ArrayList
     public void addTicket(AirplaneTicket ticket) {
@@ -20,6 +14,9 @@ public class TicketManager {
 
     // Method to search for an AirplaneTicket object by flight number
     public AirplaneTicket searchTicketByFlightNumber(String flightNumber) {
+
+        //return tickets.get(tickets.indexOf(new AirplaneTicket(flightNumber, "", "", "", 0.0)));
+
         for (AirplaneTicket ticket : tickets) {
             if (ticket.getFlightNumber().equals(flightNumber)) {
                 return ticket;

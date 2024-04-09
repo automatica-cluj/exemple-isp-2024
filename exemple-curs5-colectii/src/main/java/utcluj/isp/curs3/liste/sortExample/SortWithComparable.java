@@ -1,18 +1,21 @@
 package utcluj.isp.curs3.liste.sortExample;
 
+import java.util.ArrayList;
+
 public class SortWithComparable {
     public static void main(String[] args) {
-        Student[] students = new Student[3];
-        students[0] = new Student("John", 10);
-        students[1] = new Student("Alice", 8);
-        students[2] = new Student("Bob", 9);
+        ArrayList<Student> students = new ArrayList<>();
+        students.add(new Student("John", 10));
+        students.add(new Student("Alice", 9));
+        students.add(new Student("Bob", 8));
+
 
         System.out.println("Before sorting:");
         for (Student student : students) {
             System.out.println(student);
         }
 
-        java.util.Arrays.sort(students);
+        java.util.Collections.sort(students);
         System.out.println("After sorting:");
         for (Student student : students) {
             System.out.println(student);

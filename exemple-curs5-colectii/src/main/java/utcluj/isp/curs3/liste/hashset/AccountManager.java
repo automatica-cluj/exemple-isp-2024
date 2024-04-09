@@ -22,6 +22,10 @@ public class AccountManager {
         return accounts.remove(account);
     }
 
+    public boolean removeAccount(String accNumber){
+       return accounts.remove(new Account("",accNumber,0.0));
+    }
+
     // Method to display all Account objects in the HashSet
     public void displayAllAccounts() {
         System.out.println("All accounts:");
