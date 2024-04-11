@@ -21,5 +21,13 @@ public class Simple1 {
         } else {
             System.out.println(keyToSearch + " does not exist in the HashMap");
         }
+
+        //search for a value in the HashMap
+        int valueToSearch = 3;
+        if (map.containsValue(valueToSearch)) {
+            System.out.println("Value " + valueToSearch + " exists in the HashMap");
+        } else {
+            System.out.println("Value " + valueToSearch + " does not exist in the HashMap");
+        }
     }
 }

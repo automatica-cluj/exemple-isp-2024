@@ -1,11 +1,12 @@
 package utcluj.isp.curs3.liste.hashset;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class AccountManager {
 
     // HashSet to store Account objects
-    private HashSet<Account> accounts;
+    private Set<Account> accounts;
 
     // Constructor
     public AccountManager() {

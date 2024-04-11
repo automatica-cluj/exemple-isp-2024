@@ -5,21 +5,41 @@ import java.util.ArrayList;
 public class ExempluEx {
 }
 
-class A{ }
-
-class D{ }
-
-class B{ }
+class B{
+}
 
 class C{
-    private ArrayList<A> list = new ArrayList<>();
-    private ArrayList<B> list2 = new ArrayList<>();
-    void doSomehting(D obj){
-        list2.add(new B());
-        list2.add(new B());
-    }
+}
 
-    void addA(A obj){
-        list.add(obj);
+class A{
+    private ArrayList<B> list1;
+    private ArrayList<C> list2 = new ArrayList<>();
+
+    public A(ArrayList<B> list1) {
+        this.list1 = list1;
+        list2.add(new C());
+        list2.add(new C());
+    }
+}
+
+interface X{
+    public String method1();
+}
+
+class Y implements X{
+
+    @Override
+    public String method1() {
+        return "Some string";
+    }
+}
+
+class P{
+
+}
+
+class Q{
+    void doSometing(Q arg){
+
     }
 }
