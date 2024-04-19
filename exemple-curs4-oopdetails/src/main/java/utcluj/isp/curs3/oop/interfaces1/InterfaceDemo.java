@@ -67,6 +67,18 @@ public class InterfaceDemo {
         dog.eat();
         dog.sleep();
 
+        Animal x = new Penguin();
+        ((Bird)x).fly();
+        Bird y = (Bird)x;
+        y.fly();
+        Penguin z = (Penguin)x;
+
+        Object k = new Penguin();
+        if(dog instanceof Bird) {
+            Bird f = (Bird) dog;
+            f.fly();
+        }
+
         Penguin penguin = new Penguin();
         penguin.eat();
         penguin.sleep();

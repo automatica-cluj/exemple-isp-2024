@@ -57,6 +57,21 @@ class Rectangle implements Shape, Drawable {
     }
 }
 
+class DrawingBoard{
+    private Drawable[] shapes;
+
+    public DrawingBoard(Drawable[] shapes) {
+        this.shapes = shapes;
+    }
+
+    public void drawShapes() {
+        for (Drawable shape : shapes) {
+            Drawable drawable = (Drawable) shape;
+            drawable.draw();
+        }
+    }
+}
+
 public class InterfaceExample {
     public static void main(String[] args) {
         Shape circle = new Circle(5);
@@ -72,5 +87,17 @@ public class InterfaceExample {
         rectangle.getArea();
         rectangle.getPerimeter();
         drawable2.draw();
+
+        Drawable[] shapes = new Drawable[10];
+        for (int i = 0; i < shapes.length; i++) {
+            if (i % 2 == 0) {
+                shapes[i] = new Circle(i + 1);
+            } else {
+                shapes[i] = new Rectangle(i + 1, i + 2);
+            }
+        }
+
+        DrawingBoard board = new DrawingBoard(shapes);
+        board.drawShapes();
     }
 }
