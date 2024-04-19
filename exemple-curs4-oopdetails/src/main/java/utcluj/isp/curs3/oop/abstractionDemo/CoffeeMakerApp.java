@@ -8,7 +8,7 @@ interface CoffeeMaker {
     void brewCoffee();
 }
 
-abstract class AbstractCoffeeMaker implements CoffeeMaker {
+ abstract class AbstractCoffeeMaker implements CoffeeMaker {
     private int water;
     private int coffee;
     private int milk;

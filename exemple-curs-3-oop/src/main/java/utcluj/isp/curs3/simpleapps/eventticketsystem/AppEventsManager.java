@@ -12,6 +12,7 @@ public class AppEventsManager {
 
         eventsManagementService.buyTicketForEvent("Mihai", "m@m.m", "123", "Concert A");
         eventsManagementService.buyTicketForEvent("Alex", "a@a.a", "456", "Concert A");
+        eventsManagementService.buyTicketForEvent("Dan", "a@a.a", "456", "Concert A");
 
         eventsManagementService.displayAllEvents();
 

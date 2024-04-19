@@ -85,6 +85,7 @@ class AbstractClassExample {
         Drawing drawing = new Drawing(shapes);
         drawing.printShapes();
         System.out.println("Total area: " + drawing.calculateTotalArea());
+
     }
 }
 

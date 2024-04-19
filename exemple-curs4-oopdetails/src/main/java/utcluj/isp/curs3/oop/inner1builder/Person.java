@@ -102,8 +102,7 @@ public class Person {
     public static void main(String[] args) {
         Person person = new Person.Builder()
                 .setFirstName("John")
-                .setLastName("Doe")
-                .setAge(30)
+                .setAge(10)
                 .setAddress("123 Main St")
                 .setPhone("555-1234")
                 .setEmail("john.doe@example.com")
